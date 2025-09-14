@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login_page</title>
+        <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing:border-box;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height:100vh ;
+                background:url(https://wallpaperaccess.com/full/1163807.jpg) no-repeat;
+                background-position: center;
+                background-size: cover;
+                
+            }
+            .division{
+                width:420px;
+                background-color:transparent;
+                color:white;
+                border-radius: 20px;
+                padding: 30px 40px;
+                border: 2px solid white;
+                backdrop-filter:blur(10px);
+            }
+            h1{
+                font-size: 42px;
+                text-align: center;
+            }
+            .inputfild{
+                width: 100%;
+                height: 50px;
+                margin: 30px 0;
+            }
+            .inputfild input{
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                border: 2px solid gray;
+                border-radius: 40px;
+                padding: 10px;
+            }
+            .inputfild input::placeholder{
+                color: white;
+            } 
+            .forgot{
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                margin:-15px 0 15px ;
+                text-decoration: none;
+                color: white;
+            }
+            .forgot label input{
+                accent-color: white;
+            }
+            .forgot a{
+                color:white;
+                text-decoration:none;
+            }
+            .forgot a:hover{
+                text-decoration: underline;
+            }
+            .btn{
+                width: 100%;
+                height: 40px;
+                background: white;
+                color: black;
+                border: 2px solid white;
+                border-radius: 40px;
+            }
+            .noaccount{
+                text-align: center;
+                padding: 20px;
+            }
+            .noaccount a{
+                color: white;
+                text-decoration: none;
+            }
+            .noaccount a:hover{
+                text-decoration: underline;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="division">
+            <form>
+            <h1>Login</h1>
+            <div class="inputfild">
+            <input type="text" placeholder="Username" required>
+            </div>
+            <div class="inputfild">
+            <input type="text" placeholder="Password" required>
+            </div>
+            <div class="forgot">
+            <label><input type="checkbox">Remember Me</label>
+            <a href="#">Forgot Password?</a>
+            </div>   
+            <button type="submit" class="btn">Login</button>
+            <div class="noaccount">
+            <p>Dont have an account? <a href="#">Register</a></p>
+            </div>
+            </form>
+        </div>
+
+    </body>
+</html>
